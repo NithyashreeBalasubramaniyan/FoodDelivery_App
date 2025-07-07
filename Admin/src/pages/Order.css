@@ -1,0 +1,85 @@
+.order {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.order h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color:tomato;
+  text-align: center;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.order-item div {
+  flex: 1;
+}
+
+.order-item-food {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.order-item-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.25rem 0;
+}
+
+.order-item-address p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.order-item-phone {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.order-item > p {
+  min-width: 100px;
+  margin: 0.25rem 1rem 0 0;
+  font-weight: 500;
+}
+
+.order-item select {
+  margin-top: 1rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-item select:hover {
+  background-color: #eaeaea;
+}

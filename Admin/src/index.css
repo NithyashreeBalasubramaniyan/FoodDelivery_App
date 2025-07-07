@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+*{
+   padding: 0;
+   margin:0;
+   box-sizing: border-box; 
+}
+body{
+    width:100vw;
+    height: 100vh;
+    color:#2f3542;
+  font-family: "Outfit", sans-serif;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    
+}
+html {
+  scroll-behavior: smooth;
+}
+hr{
+  width: 100vw;
+  
+  height: 4px;
+}
+.admin-structure{
+  display: flex;
+}

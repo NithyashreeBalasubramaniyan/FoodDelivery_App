@@ -1,0 +1,46 @@
+.add-block{
+    width: 60vw;
+    padding: 20px 30px;
+    padding-left: 50px;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.flex-row{
+    display: flex;
+    gap:20px;
+}
+.add-btn{
+    padding: 6px 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 6px;
+}
+.add-food-img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-top: -40px;
+}
+.img-input{
+    display: flex;
+    flex-direction: column;
+
+     height: 200px;
+     margin-bottom: -20px;
+
+}
+.flex-col input , textarea {
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.select-input{
+      padding: 6px;
+}
+.flex-col input:focus{
+    outline: none;
+}

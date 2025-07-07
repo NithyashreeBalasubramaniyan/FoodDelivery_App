@@ -1,0 +1,92 @@
+.my-orders {
+  padding: 2rem;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.my-orders h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color:tomato;
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid-header,
+.grid-row {
+  display: grid;
+  grid-template-columns: 60px 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.grid-header {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.grid-row img {
+  width: 32px;
+  height: 32px;
+}
+
+.grid-row p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+  word-wrap: break-word;
+ 
+}
+
+.grid-row .status span {
+  color: #4caf50;
+  margin-right: 5px;
+}
+
+.grid-row .status.processing span {
+  color: #ff9800;
+}
+
+.grid-row .status.cancelled span {
+  color: #f44336;
+}
+
+.grid-row button {
+  background-color: #03a9f4;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.grid-row button:hover {
+  background-color: #0288d1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .grid-header,
+  .grid-row {
+    grid-template-columns: 40px 1fr 1fr;
+    grid-template-areas:
+      "icon items amount"
+      "icon total status"
+      "icon button button";
+    gap: 10px;
+  }
+
+  .grid-row button {
+    grid-area: button;
+  }
+}

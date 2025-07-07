@@ -1,0 +1,85 @@
+.login-popup{
+    position:absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* semi-dark blur */
+    display: grid;
+
+}
+.login-container{
+        width: 50%;
+        margin: 30px auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding:50px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.login-mode{
+    height: 60%;
+}
+.signup-mode{
+    height: 77%;
+}
+.input-block{
+    display: flex;
+    margin-bottom: 15px;
+    gap:20px;
+}
+.login-title-section img{
+    width: 20px;
+    height: 20px;
+}
+.input-block label{
+    width: 100px;
+}
+.input-block input{
+    flex:1;
+    max-width: 500px;
+    padding: 10px;
+    border:1px solid gray;
+
+}
+.input-block input:focus{
+    outline: none;
+}
+.login-title-section{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.login-ptag{
+    margin-top: 20px;
+    color:grey;
+}
+.terms-policy{
+    display:flex;
+    gap:5px;
+}
+.create-btn{
+    flex:1;
+    padding: 10px;
+    color:white;
+    background-color: tomato;
+    font-weight: bold;
+    margin-top:20px;
+    border:none;
+    border-radius: 8px;
+
+}
+.login-link{
+    text-decoration: underline;
+    text-decoration-color: cornflowerblue;
+    color: cornflowerblue;
+}
+.login-btn{
+    width: 30%;
+
+}
+@media (max-width:774px){
+    .login-container{
+        width: 80%;
+    }
+}

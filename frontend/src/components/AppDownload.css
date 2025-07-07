@@ -1,0 +1,29 @@
+.appdownload-section{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px auto;
+    gap:10px;
+}
+.appdownload-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    margin: 20px auto;
+  
+}
+.appdownload-img img{
+      transition: 1s linear;
+}
+.appdownload-img img:hover{
+    transform: scale(1.2);
+}
+@media(max-width:774px){
+    .appdownload-img{
+        display: flex;
+        flex-direction: column;
+    }
+}

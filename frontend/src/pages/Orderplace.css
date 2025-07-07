@@ -1,0 +1,52 @@
+.orderplace-session{
+    width: 100%;
+    display:flex;
+   padding: 20px 100px;
+  
+   gap:100px;
+  
+
+}
+.delivery-title{
+    margin-bottom: 15px;
+    text-align: center;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.delivery-details{
+    width: 600px;
+     
+
+}
+.double-input{
+    display: flex;
+    gap:1rem;
+  
+}
+.orderplace-session input{
+    padding: 9px;
+    color:gray;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border:1px solid grey;
+    flex:1;
+}
+.single-input{
+    width: 100%;
+}
+.orderplace-session input:focus{
+    outline: none;
+    
+}
+@media (max-width:774px){
+    .orderplace-session{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:25px;
+        justify-content: center;
+        padding: 10px;
+    }
+    .delivery-details{
+        width: 400px;
+    }
+}

@@ -1,0 +1,15 @@
+.nav-admin{
+    width: 100vw;
+}
+.nav-admin-logoblock{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdfdfdbb;
+}
+.logo-img{
+    width: 110px;
+}
+.profile-img{
+    width: 50px;
+}
