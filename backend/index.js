@@ -19,10 +19,22 @@ const port=process.env.PORT||4000
 //middleware   
 
 app.use(express.json())
+const allowedOrigins = [
+  'https://fooddelivery-app-frontend-ax6p.onrender.com',
+  'https://fooddelivery-app-admin-f9cx.onrender.com'
+]
+
 app.use(cors({
-  origin: 'https://fooddelivery-app-frontend-ax6p.onrender.com',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true)
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true)
+    } else {
+      return callback(new Error('Not allowed by CORS'))
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
 }))
 
 connectDB()
