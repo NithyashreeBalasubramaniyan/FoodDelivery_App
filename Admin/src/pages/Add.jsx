@@ -36,7 +36,7 @@ export const Add = ({url}) => {
                 const response=await axios.post(`${url}/api/food/add`,formdata)
                 console.log(formdata,response)
                if(response.data.success){
-                seData({
+                setData({
                     name:'',
                     description:'',
                     price:0,
