@@ -4,9 +4,10 @@ import {Sidebar} from './component/Sidebar'
 import { List } from './pages/List'
 import { Add } from './pages/Add'
 import { Order } from './pages/Order'
+import {url} from '../assets/assets
 
 function App() {
-  const url='https://fooddelivery-app-k8kc.onrender.com'
+  
   return (
     <>
       <Navbar />
