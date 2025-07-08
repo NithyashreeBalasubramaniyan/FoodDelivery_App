@@ -6,7 +6,7 @@ import { Add } from './pages/Add'
 import { Order } from './pages/Order'
 
 function App() {
-  const url='http://localhost:4000'
+  const url='https://fooddelivery-app-k8kc.onrender.com'
   return (
     <>
       <Navbar />
