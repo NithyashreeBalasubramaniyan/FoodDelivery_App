@@ -2,7 +2,7 @@ import orderModel from "../models/orderModel.js";
 import {usermodel} from "../models/UserModel.js"
 import Stripe from "stripe";
 
-const homeurl='http://localhost:5173'
+const homeurl='https://fooddelivery-app-frontend-ax6p.onrender.com'
 const orderplacement=async(req,res)=>{
     const stripe=new Stripe(process.env.STRIPE_SECRET)
     try{
