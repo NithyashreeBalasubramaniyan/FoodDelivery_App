@@ -15,7 +15,7 @@ export const Navbar = ({setShowlogin}) => {
 
   return (
     <div className='navbar'>
-      <img onClick={()=>navigate('/')} src={assets.logo} />
+      <img className='tomato' onClick={()=>navigate('/')} src={assets.logo} />
       <div className="nav-item">
         <ul className='nav-menu'>
           <Link to='/' onClick={()=>setActive('home')} className={active==='home'?"active-class":""}>Home</Link>

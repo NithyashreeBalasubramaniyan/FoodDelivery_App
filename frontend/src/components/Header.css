@@ -12,7 +12,6 @@
     padding-top: 30px;
 
     
-    
 }
 .header-title{
     padding-top: 50px;
@@ -42,5 +41,15 @@
 @media  ( max-width:774px){
     .header-text{
         display: none;
+    }
+    .header-body{
+        margin: 0 auto;
+      width: 95vw;
+      background-position: right;
+        background-size: cover contain; 
+ 
+    }
+    .tomato{
+        width: 100px;
     }
 }

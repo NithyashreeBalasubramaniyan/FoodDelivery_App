@@ -101,4 +101,8 @@
     .nav-right .btn{
         margin-left: -20px;
     }
+    .navbar{
+        width: 95vw;
+    
+    }
 }

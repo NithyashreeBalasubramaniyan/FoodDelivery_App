@@ -80,6 +80,10 @@
 }
 @media (max-width:774px){
     .login-container{
-        width: 80%;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .login-input label{
+        display: none;
     }
 }
