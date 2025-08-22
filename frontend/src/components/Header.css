@@ -43,10 +43,14 @@
         display: none;
     }
     .header-body{
+        
         margin: 0 auto;
       width: 95vw;
-      background-position: right;
+      background-position: bottom;
         background-size: cover contain; 
+         
+         background-color: rgba(0, 0, 0, 0.4); /* dim layer */
+  
  
     }
     .tomato{
