@@ -51,9 +51,15 @@
             overflow-y: hidden;
            
     }
+    .explore-menu{
+        width: 95vw;
+    }
     
    
     .explore-menu::-webkit-scrollbar {
         display: none;  /* hides scroll bar */
+    }
+    .explore-title{
+        width: 95vw;
     }
 }

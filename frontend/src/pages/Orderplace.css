@@ -39,6 +39,7 @@
 }
 @media (max-width:774px){
     .orderplace-session{
+        width: 95vw;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;

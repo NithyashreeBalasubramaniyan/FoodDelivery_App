@@ -7,6 +7,9 @@
     margin: 40px auto;
     gap:10px;
 }
+.appdownload-section h1{
+    font-size: 25px;
+}
 .appdownload-img{
     display: flex;
     align-items: center;
@@ -16,6 +19,8 @@
   
 }
 .appdownload-img img{
+    height: 70px;
+    max-width: 200px;
       transition: 1s linear;
 }
 .appdownload-img img:hover{
@@ -25,5 +30,8 @@
     .appdownload-img{
         display: flex;
         flex-direction: column;
+    }
+    .appdownload-section{
+        width: 95vw;
     }
 }

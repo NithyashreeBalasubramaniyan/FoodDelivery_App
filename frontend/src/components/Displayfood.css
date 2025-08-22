@@ -16,3 +16,8 @@
     color:gray;
     margin-bottom: 27px;
 }
+@media  (max-width:774px){
+    .food-display-section{
+        width: 95vw;
+    }
+}

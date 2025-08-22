@@ -104,5 +104,10 @@
     .navbar{
         width: 95vw;
     
+    
     }
+    .profile-imgs{
+        max-width: 8px;
+    }
+    
 }

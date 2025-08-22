@@ -40,7 +40,7 @@ export const Navbar = ({setShowlogin}) => {
         {!token?
         <button onClick={()=>setShowlogin(true)}>Sign in</button>:
         <div className='profile-img'>
-          <img  src={assets.profile_icon} />
+          <img  className='profile-imgs' src={assets.profile_icon} />
           <div className="profile-content">
              <ul className='list-value'>
               <li onClick={()=>navigate('/myorders')} className='profile-value'><img  src={assets.bag_icon} /><p>order list</p></li>
