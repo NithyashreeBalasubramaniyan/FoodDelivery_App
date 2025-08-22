@@ -99,6 +99,25 @@
 .promo-code-block input:focus{
     outline:none;
 }
+.cart-grid {
+  display: grid;
+  grid-template-columns: 60px 1fr 100px 120px 100px 60px;
+  align-items: center;
+}
+.cart-item-title {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: grey;
+}
+
+.cart-item-title,
+.cart-product {
+  composes: cart-grid;
+}
+
 @media(max-width:774px){
     .cart-details{
         width: 95vw;
