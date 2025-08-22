@@ -112,7 +112,7 @@
 
     }
     .cart-products{
-           width: 95vw;
+          min-width: 95vw;
 
     }
 }
