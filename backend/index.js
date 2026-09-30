@@ -22,6 +22,9 @@ app.use(express.json())
 
 
 connectDB()
+app.use(cors({
+    origin: "https://food-delivery-app-front-ax6p.onrender.com"
+}));
 
 app.use('/api/food',foodRoute)
 
