@@ -17,14 +17,15 @@ const app=express()
 const port=process.env.PORT||4000
 
 //middleware   
+app.use(cors({
+    origin: "https://food-delivery-app-front-ax6p.onrender.com"
+}));
 
 app.use(express.json())
 
 
 connectDB()
-app.use(cors({
-    origin: "https://food-delivery-app-front-ax6p.onrender.com"
-}));
+
 
 app.use('/api/food',foodRoute)
 
