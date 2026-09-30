@@ -37,7 +37,13 @@ export const List = ({url}) => {
           {foodList.map((item)=>{
             return(
                 <div key={item._id} className="formater list-items">
-                    <img className='list-img' src={`${url}/images/${encodeURIComponent(item.image)}`} />
+                    
+                    
+
+                    <img
+                      src={`${url}/images/${item.image}`}
+                      alt={item.name}
+                    />
                     <p>{item.name}</p>
                     <p>{item.category}</p>
                     <p>{item.price}</p>

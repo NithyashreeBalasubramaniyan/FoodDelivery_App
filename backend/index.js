@@ -13,19 +13,15 @@ import orderroute from './routes/orderRoutes.js';
 const app = express();
 const port = process.env.PORT || 4000;
 
+
+
 const allowedOrigins = [
-  "https://food-delivery-app-front-ax6p.onrender.com",
+  "https://fooddelivery-app-frontend-ax6p.onrender.com/",
   "https://fooddelivery-app-admin-f9cx.onrender.com"
 ];
 
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
+  origin: allowedOrigins,
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
@@ -39,7 +35,16 @@ app.use('/api/user', userRoute);
 app.use('/api/cart', cartroute);
 app.use('/api/order', orderroute);
 
-app.use('/images', express.static('uploads'));
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(
+  '/images',
+  express.static(path.join(__dirname, 'uploads'))
+);
 
 app.get('/ping', (req, res) => {
   res.send("pong");
