@@ -20,12 +20,6 @@ const port=process.env.PORT||4000
 
 app.use(express.json())
 
-app.use(cors({
-  origin: true,
-  credentials: true,
-   methods: ["GET", "POST", "PUT", "DELETE"],
-}));
-
 
 connectDB()
 
@@ -41,7 +35,7 @@ app.get('/ping', (req, res) => {
   res.send("pong");
 });
 
-//api
+
 app.use('/images',express.static('uploads'))
 app.get('/',(req,res)=>{
     res.send('API Working')

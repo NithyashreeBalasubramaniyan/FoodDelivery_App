@@ -1,8 +1,8 @@
 import jwt from 'jsonwebtoken';
 
 const AuthMethod = (req, res, next) => {
-  const {token} = req.headers // 🔥 standard header
-  console.log("token",token);         // ✅ helpful for debugging
+  const {token} = req.headers //  standard header
+  console.log("token",token);         //  helpful for debugging
 
   if (!token) {
     return res.status(401).json({ success: false, message: 'Authorization header missing or malformed' });
