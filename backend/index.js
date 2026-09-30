@@ -16,7 +16,7 @@ const port = process.env.PORT || 4000;
 
 
 const allowedOrigins = [
-  "https://fooddelivery-app-frontend-ax6p.onrender.com/",
+  "https://fooddelivery-app-frontend-ax6p.onrender.com",
   "https://fooddelivery-app-admin-f9cx.onrender.com"
 ];
 
