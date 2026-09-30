@@ -50,17 +50,18 @@ export const List = ({ url }) => {
       <div className="list-foods">
         
        {foodList.map((item) => {
-  const imageUrl = `${url}/images/${item.image}`;
+  const imageUrl =
+  `${url}/images/${encodeURIComponent(item.image.trim())}`;
 
   return (
     <div key={item._id} className="formater list-items">
       <img
-        src={imageUrl}
-        alt={item.name}
-        onError={() => {
-          console.log("Failed image:", imageUrl);
-        }}
-      />
+      src={imageUrl}
+      alt={item.name}
+      onError={(e) => {
+        console.log("Image failed:", e.currentTarget.src);
+      }}
+    />
 
       <p>{item.name}</p>
       <p>{item.category}</p>
