@@ -53,11 +53,14 @@ export const List = ({ url }) => {
 
           return (
             <div key={item._id} className="formater list-items">
+              const imageUrl = `${url}/images/${item.image}`;
+
               <img
                 src={imageUrl}
                 alt={item.name}
                 onError={(e) => {
-                  console.error("Image failed:", imageUrl);
+                  console.log("Image URL:", e.currentTarget.src);
+                  console.log("Image filename:", item.image);
                 }}
               />
 
