@@ -45,37 +45,36 @@ export const List = ({ url }) => {
         <b>price</b>
         <b>remove</b>
       </div>
+      
 
       <div className="list-foods">
-        {foodList.map((item) => {
-          const imageUrl =
-            `${url}/images/${encodeURIComponent(item.image)}`;
+        
+       {foodList.map((item) => {
+  const imageUrl = `${url}/images/${item.image}`;
 
-          return (
-            <div key={item._id} className="formater list-items">
-              const imageUrl = `${url}/images/${item.image}`;
+  return (
+    <div key={item._id} className="formater list-items">
+      <img
+        src={imageUrl}
+        alt={item.name}
+        onError={() => {
+          console.log("Failed image:", imageUrl);
+        }}
+      />
 
-              <img
-                src={imageUrl}
-                alt={item.name}
-                onError={(e) => {
-                  console.log("Image URL:", e.currentTarget.src);
-                  console.log("Image filename:", item.image);
-                }}
-              />
+      <p>{item.name}</p>
+      <p>{item.category}</p>
+      <p>{item.price}</p>
 
-              <p>{item.name}</p>
-              <p>{item.category}</p>
-              <p>{item.price}</p>
-              <p
-                className="remove-btn"
-                onClick={() => remove_item(item._id)}
-              >
-                X
-              </p>
-            </div>
-          );
-        })}
+      <p
+        className="remove-btn"
+        onClick={() => remove_item(item._id)}
+      >
+        X
+      </p>
+    </div>
+  );
+})}
       </div>
 
       <ToastContainer
