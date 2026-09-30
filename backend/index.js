@@ -15,11 +15,15 @@ import orderroute from './routes/orderRoutes.js'
 
 const app=express()
 const port=process.env.PORT||4000
+const allowedOrigins = [
+    "https://food-delivery-app-front-ax6p.onrender.com",
+    "https://fooddelivery-app-admin-f9cx.onrender.com"
+];
 
-//middleware   
 app.use(cors({
-    origin: "https://food-delivery-app-front-ax6p.onrender.com"
+    origin: allowedOrigins
 }));
+//middleware   
 
 app.use(express.json())
 
