@@ -1,8 +1,11 @@
-import mongoose  from "mongoose"
-const mongo_db_string ='mongodb+srv://Nithyashree:Nithyashree1311@cluster0.ryx2vgt.mongodb.net/?appName=Cluster0'
- 
-export const connectDB=async()=>{
-    await mongoose.connect(mongo_db_string).then(()=>{
-        console.log('Database connected')
-    })
-}
+import mongoose from "mongoose";
+
+export const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("Database connected");
+  } catch (error) {
+    console.error("Database connection failed:", error.message);
+    process.exit(1);
+  }
+};
